@@ -24,7 +24,7 @@ img {
         width: 100%;
     }
 
-    td {
+    td {width:33.3%;
         text-align: center;
         border: 3px solid white; 
         border-collapse: collapse;
@@ -69,6 +69,26 @@ a{
 
 }
 
+.box2{
+    background-size:cover;
+    width:100%;
+    height:400px;
+    background-position:center;
+}
+
+#journal{
+    background-image: url("https://c1.sfdcstatic.com/content/dam/blogs/ca/Blog%20Posts/bullet-journal-og.jpg");
+}
+
+#folder{
+    background-image: url(https://cdn.shopify.com/s/files/1/2161/7289/products/775_PlasticFileFolders_6Asst_01_f48289b7-7143-40da-ad73-cd6432f8f67e_2000x.jpg?v=1589985432);
+
+}
+
+#tennis{background-image: url(https://content.thriveglobal.com/wp-content/uploads/2019/03/sport-3068038_1920.jpg);
+
+}
+
     </style>
 </head>
 
@@ -77,34 +97,41 @@ a{
         <tr>
             <td>
                 <a href="journal.html">
-                    <div class='box'><b>Journal<b/></div>
+                    <div  class='box'><b>Journal<b/></div>
                 </a>
 
-                <img src="https://c1.sfdcstatic.com/content/dam/blogs/ca/Blog%20Posts/bullet-journal-og.jpg" id='notebook'>
+                <!-- <img src="https://c1.sfdcstatic.com/content/dam/blogs/ca/Blog%20Posts/bullet-journal-og.jpg" id='notebook'> -->
 
-                <script type="text/javascript">
-
-                   var notebook= document.getElementById('notebook')
-                    
-
-
-
-
-
-
-                </script>
+               
             </td>
             
             <td>
                 <a href="projects.html"><div class='box'><b>Projects<b/></div></a>
             </td>
             <td>
-                <a href="about.html"><div class='box'><b>About Me<b/></div></a>
+                <a href="aboutme.html"><div class='box'><b>About Me<b/></div></a>
             </td>
         </tr>
+
+          <tr>
+            <td>
+               <div id="journal" class="box2"></div>
+              
+               
+            </td>
+             
+            <td>
+                <div id="folder" class="box2"></div>
+               
+            </td>
+            <td>
+                 <div id="tennis" class="box2"></div>
+            </td>
+        </tr>
+
     </table>
 
-    
+     
 
   <!--  <center> <iframe width="560" height="315" src="https://www.youtube.com/embed/SYlrN5Unq3c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center> -->
 </body>
