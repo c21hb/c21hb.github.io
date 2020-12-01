@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		
+
+		p { 
+			size: 80px;
+			color: yellow;
+			text-align: center;
+
+
+
+		}
+
+
+		body{
+			background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/andromeda-galaxy-royalty-free-image-1585682435.jpg);
+		}
+
+
+	/*	this is the styling for the divs with the class of stars that is made in the javascipt function called makeStar*/
+
+		.stars{
+			width:20px;
+			height:20px;
+			border-radius:50%;
+			background-color: white; 
+			position:absolute;
+
+		}
+
+
+	</style>
+	<title></title>
+</head>
+<body>
+
+	<p id="title">
+		Click to Make Stars!
+
+	</p>
+
+
+
+
+
+	<script type="text/javascript">
+
+
+//This is an event listener added to the document//
+
+
+		document.addEventListener("click", 
+			
+// this is a function that will make stars appear on click
+
+		function makeStar (event){
+
+			console.log(event.clientX, event.clientY)
+
+		// making the event based on the x and y coordinate of mouse
+			var star = document.createElement("div");
+
+		// creating a varaible to refer to the div that we are creating as 'star'
+
+			document.body.appendChild(star);
+
+		// adding the inside element star //
+			star.classList.add("stars")
+
+			star.style.left = event.clientX + "px";
+
+			star.style.top = event.clientY + "px";
+		}
+// making the location of the event equal to the star
+
+
+			)
+
+
+
+		
+
+	</script>
+
+</body>
+</html>
