@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css"></style>
+
+
+.changed - make it change!!!
+
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		function makeImage (){
+
+			var img = document.createElement("div");
+			img.style.height = "200px";
+			img.style.width = "200px";
+			// doggo.style.backgroundColor = "blue";
+			img.style.backgroundImage = " url(https://i.ytimg.com/vi/6G-k9JQ6n0o/maxresdefault.jpg)";
+			img.style.backgroundSize = "contain";
+			img.style.backgroundRepeat = "no-repeat";
+
+			document.body.appendChild(img);
+
+
+		}
+
+		for (var i=0; i<100; i++) {
+			
+			makeImage();
+		}
+
+		var change = document.getElementById('div')
+
+		change.addEventListener('click', 
+
+
+			function changeimage () {
+
+
+				document.body.appendChild(change)
+
+				change.classList.add('changed')
+			}
+
+
+
+
+			)
+
+
+
+
+	</script>
+	
+</body>
+</html>
